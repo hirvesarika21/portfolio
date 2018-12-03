@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hello, world!</title>
+</head>
+<style>
+    .contacts {
+        background-color: rgb(255, 182, 237);
+        margin-top: 0px;
+    }
+
+    .nav {
+        background-color: gray;
+        text-align: center;
+        color: white;
+        border: 1px solid black;
+        height: 50px;
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        color: red;
+    }
+
+    img {
+        width: 100%;
+
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: red;
+    }
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .topnav .icon {
+        display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {
+            position: relative;
+        }
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+
+
+
+
+    /* Header
+==================================================*/
+
+    .header {
+        text-align: center;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        height: 65px;
+        background-color: #D33E43;
+
+    }
+
+    nav ul {
+        display: inline-block;
+        padding-left: 0;
+        list-style: none;
+        padding: 20px;
+        margin-bottom: 0;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    nav li a {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #444;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .bg-nav {
+        background-color: rgb(233, 4, 4);
+        border-bottom: 1px solid #f3f3f3
+    }
+
+    .bg-nav ul {
+        padding: 10px;
+    }
+
+    a:focus {
+        color: #444;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #425BB5;
+        text-decoration: none;
+    }
+
+    a.active {
+        color: #425BB5;
+    }
+
+
+    /* home section*/
+
+    #home {
+
+        background-size: cover;
+
+    }
+
+
+
+    /* about section*/
+
+    #about {
+        margin-top: -96px;
+        padding: 100px 0;
+        background-color: aqua;
+
+    }
+
+
+    .container image {
+        border: 1px solid black;
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        margin-left: 630px;
+        /* margin-bottom: 80px; */
+        margin-top: -185px;
+    }
+
+
+
+    .h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 30px;
+
+    }
+
+    .pro {
+        background-color: #D33E43;
+    }
+
+    .main {
+        background-color: white;
+        height: 450px;
+        width: -172px;
+        padding: 65px;
+        margin-top: 20px;
+        border: 1px solid black;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    .service-heading {
+        margin: 15px 0;
+        text-transform: none;
+        color:black;
+    }
+    .service{
+        background-color: rgb(149, 175, 76);
+        background-image: url('C:\images\my.htm');
+        
+    margin-top: -72px;
+
+
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#other">other</a>
+            <a href="#services">Services</a>
+            <a href="#contact">contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+
+
+        <div class="img" id="home">
+            <img src="C:\images\girl.jpg" alt="Flowers in Chania">
+            <div class="centered">
+                <h1 style="color:black; font-size:18px; font-family:'Open Sans', sans-serif; margin-top:-160px;">
+
+                    <strong>HELLO EVERYONE
+                        <br>
+                        <BR>I AM SARIKA.WHATS UP GUYS....</strong>
+                </h1>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br<br>
+
+            <!-- about -->
+            <div class="section" id="about">
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-up">
+                        <h1 class="size-50">
+                            <strong>Know About me</strong>
+                        </h1>
+                        <br>
+                        <br>
+                        <p style="font-size: 20px;">
+                            My self sarika hirve.i had completed my engineering in computer science with first class distinction, from genba sopanrao
+                            moze collage balewadi,pune
+                        </p>
+                        <p style="font-size: 20px;">I am completed courses in c,c++,java as well as web development course from codekul institute pune.I
+                            am intrested in learning new things related to software.also i am easily adjustable in new environment.I
+                            am also user friendly.</p>
+                    </div>
+
+                    <div class="col-md-6 about-img-div">
+                        <!-- <div class="about-border" data-aos="fade-up" data-aos-delay=".5"></div>-->
+                        <img src="C:\images\audience.jpg" width="300" class="img-responsive" alt="" float="right" data-aos="fade-right" data-aos-delay="0">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ./about -->
+            <!--other-->
+            <div class="pro" id="other">
+                <h1 style="font-size:70px;color:blue;text-align:center;">
+                    <strong>other skills</strong>
+                </h1>
+
+                <h1 style="font-size:40px;line-height: 10px;">.net</h1>
+                <br>
+                <div class="progress">
+
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+
+                </div>
+                <br>
+                <h1 style="font-size:40px;line-height: 50px;">bootstrap</h1>
+                <br>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <br>
+                <h1 style="font-size:40px;line-height: 50px;">java</h1>
+                <br>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <br>
+                <h1 style="font-size:40px;line-height: 50px;">c++</h1>
+                <br>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <br>
+                <h1 style="font-size:40px;line-height: 50px;">html and css</h1>
+                <br>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <br>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!--other-->
+            <!--services-->
+            <div class="service">
+                <section id="services">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <h2 class="section-heading text-uppercase"><strong>Services</strong></h2><br>
+                                <h3>Lorem ipsum dolor sit amet consectetur.</h3><br>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <h4>E-Commerce</h4>
+                                <p style="font-size: 25px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
+                                    inventore harum ex magni, dicta impedit.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <h4 class="service-heading">Responsive Design</h4>
+                                <p style="font-size: 25px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
+                                    inventore harum ex magni, dicta impedit.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <h4 class="service-heading">Web Security</h4>
+                                <p style="font-size: 25px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
+                                    inventore harum ex magni, dicta impedit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <!--services-->
+
+
+            <!--contact-->
+            <div class="bgr">
+                <div class="contacts" id="contact">
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+                            <h1 style="text-align:center;font-size:60px;margin-bottom:30px;">
+                                <strong>contact me</strong>
+                            </h1>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Firstname </label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname " required="required"
+                                            data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Lastname </label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname " required="required"
+                                            data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email </label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email " required="required"
+                                            data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Mobile no </label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your mob.no" required="required"
+                                            data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message </label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me " rows="4" required="required"
+                                            data-error="Please, leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </form>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <!-- ./contact -->
+
+
+            <!-- jQuery -->
+            <script src="js/jquery.js"></script>
+            <!--  plugins  -->
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/plugins.js"></script>
+            <script src="js/aos.js"></script>
+            <script src="js/jquery.form.js"></script>
+            <script src="js/jquery.validate.min.js"></script>
+
+            <!--  main script  -->
+            <script src="js/custom.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
